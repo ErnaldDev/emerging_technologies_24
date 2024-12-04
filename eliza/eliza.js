@@ -69,6 +69,31 @@ function reflect(input) {
     return input.split(' ').map(word => reflections[word] || word).join(' ');
 }
 
+function respond(userInput) {
+    // Iterate over the responses
+    for (let pattern in responses) {
+        // Create a case-insensitive regex pattern
+        let regex = new RegExp(pattern, 'i'); 
+        // Match the user input against the pattern
+        let match = userInput.match(regex); 
+
+        if (match) {
+            // Get a random response
+            let response = responses[pattern][Math.floor(Math.random() * responses[pattern].length)];
+            
+            // Reflect matched groups if necessary
+            if (match.length > 1) {
+                let reflectedGroups = match.slice(1).map(group => reflect(group));
+                return response.replace(/{(\d+)}/g, (_, index) => reflectedGroups[index] || '');
+            }
+// Return the response if no placeholders are present
+            return response; 
+        }
+    }
+
+    // Default response if no patterns match
+    return "I'm not sure I understand. Can you elaborate?";
+}
 
 
 
