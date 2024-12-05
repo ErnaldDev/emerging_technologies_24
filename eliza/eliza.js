@@ -78,15 +78,15 @@ function respond(userInput) {
         let match = userInput.match(regex); 
 
         if (match) {
-            // Get a random response
+            // selects a random response from the array of responses
             let response = responses[pattern][Math.floor(Math.random() * responses[pattern].length)];
             
-            // Reflect matched groups if necessary
+            // reaflects the user input if the response contains placeholders
             if (match.length > 1) {
                 let reflectedGroups = match.slice(1).map(group => reflect(group));
                 return response.replace(/{(\d+)}/g, (_, index) => reflectedGroups[index] || '');
             }
-// Return the response if no placeholders are present
+// returns the response if there are no placeholders
             return response; 
         }
     }
