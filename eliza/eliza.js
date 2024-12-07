@@ -91,7 +91,7 @@ function respond(userInput) {
         }
     }
 
-    // Default response if no patterns match
+    // Default response if no patterns matchs
     return "I'm not sure I understand. Can you elaborate?";
 }
 
