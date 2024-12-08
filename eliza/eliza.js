@@ -62,6 +62,8 @@ const reflections = {
     "are": "am"
 };
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
         const userInput = document.getElementById('user-input');
         const sendButton = document.getElementById('send-button');
@@ -77,16 +79,40 @@ document.addEventListener('DOMContentLoaded', () => {
         chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
     }
 
-  //send button event listener
-  sendButton.addEventListener('click', () => {
+ //function to send message
+function sendMessage(){
     const message = userInput.value.trim();
     if (message) {
-addMessage('user', message);
-const elizaResponse = respond(message);
-addMessage('eliza', elizaResponse);
-userInput.value = '';
+        addMessage('user', message);
+        const elizaResponse = respond(message);
+        addMessage('eliza', elizaResponse);
+        userInput.value = '';
     }
-    });
+}
+
+//event lister for send button
+sendButton.addEventListener('click', sendMessage);
+
+//event listener for enter key
+userInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        sendMessage();
+    }
+});
+
+
+    //send button event listener 
+  //sendButton.addEventListener('click', () => {
+    //const message = userInput.value.trim();
+  //  if (message) {
+//addMessage('user', message);
+//const elizaResponse = respond(message);
+//addMessage('eliza', elizaResponse);
+//userInput.value = '';
+ //   }
+ //   });
+
+
 });
 
 
