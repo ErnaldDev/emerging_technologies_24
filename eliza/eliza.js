@@ -62,6 +62,32 @@ const reflections = {
     "are": "am"
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const chatLog = document.getElementById('chat-log');
+
+    
+    // Function to add a message to the chat log
+    function addMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.className = sender === 'user' ? 'message user-message' : 'message eliza-message';
+        messageElement.textContent = message;
+        chatLog.appendChild(messageElement);
+        chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
+    }
+
+  //send button event listener
+  sendButton.addEventListener('click', () => {
+    const message = userInput.value.trim();
+    if (message) {
+addMessage('user', message);
+const elizaResponse = respond(message);
+addMessage('eliza', elizaResponse);
+userInput.value = '';
+    }
+    });
+});
 
 
 //this function is used to get the response from the user input and replace the pronouns with the reflection dictionary
@@ -90,6 +116,8 @@ function respond(userInput) {
             return response; 
         }
     }
+
+    
 
     // Default response if no patterns matchs
     return "I'm not sure I understand. Can you elaborate?";
