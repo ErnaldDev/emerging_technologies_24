@@ -1,32 +1,32 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(12, 197, 89);
-    color: #c52727;
+    background-color: #1b2838;
+    color: #c7d5e0;
 }
 
 #chat-container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #2a475e;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #66c0f4;
 }
 
 #chat {
     height: 400px;
     overflow-y: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #1b2838;
     padding: 10px;
-    background: #fafafa;
+    background: #171a21;
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -35,14 +35,14 @@ h1 {
     margin: 10px 0;
 }
 
-#chat-log .user {
+#chat-log .user-message {
     text-align: right;
-    color: blue;
+    color: #66c0f4;
 }
 
-#chat-log .eliza {
+#chat-log .eliza-message {
     text-align: left;
-    color: green;
+    color: #c7d5e0;
 }
 
 #chat-input {
@@ -52,19 +52,25 @@ h1 {
 #user-input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #1b2838;
     border-radius: 4px;
+    background-color: #1b2838;
+    color: #c7d5e0;
+}
+
+#user-input::placeholder {
+    color: #56687a;
 }
 
 #send-button {
     padding: 10px;
-    background: #007bff;
-    color: white;
+    background: #66c0f4;
+    color: #1b2838;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 #send-button:hover {
-    background: #0056b3;
+    background: #3a9bdc;
 }
