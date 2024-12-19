@@ -7,8 +7,7 @@ A brief description of what the project does and the problem it solves.
 2. [trigrams.ipynb](#trigrams-ipynb)
 3. [Eliza](#Eliza)
 4. [Deployment](#Deployment)
-5. [Contributing](#contributing)
-6. [License](#license)
+5. [References](#References)
 
 # Repo Structure
 
@@ -113,7 +112,17 @@ adjust pronouns in responses, making conversations feel more natural.
 3. style.css
     - Defines the appearance of the chatbot interface.
 
-
-
-
+---
 # Deployment
+---
+The chatbot is deployed and you can access via the following link:[Eliza Chatbot](https://AnthonySultanov.github.io/emerging_technologies_24/eliza/)
+
+---
+# References
+---
+[N-gram Language Models](https://web.cs.hacettepe.edu.tr/~ilyas/Courses/CMP711/lec03-LanguageModels.pdf)
+[Text Preprocessing](https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/)
+[Trigram Models in Python](https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-language-model-nlp-python-code/)
+[JSON in Python](https://realpython.com/python-json/)
+[Project Gutenberg](https://www.gutenberg.org)
+
