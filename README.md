@@ -4,7 +4,7 @@ A brief description of what the project does and the problem it solves.
 
 ## Table of Contents
 1. [Repo Structure](#Repo-Structure)
-2. [trigrams.ipynb](#trigrams- ipynb)
+2. [trigrams.ipynb](#trigrams-ipynb)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Contributing](#contributing)
@@ -25,7 +25,24 @@ A brief description of what the project does and the problem it solves.
 
 ## trigrams.ipynb
 
-Explain how to run the project and include any commands or special instructions.
+1. Task 1:
+For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
+The process involved text cleaning and creating a model that captures three-character sequences (trigrams) and their frequencies.
+
+    - **txtcleaner(text) function**
+    .   this function removes all characters except uppercase letters, spaces, and full stops,
+        and then converting the entire text to uppercase.
+
+     - **new_trigrammodel(text) function**
+    .   this function extracts every three-character sequence from the cleaned text,
+        then counts the number of times each trigram appears. 
+
+2. Task 2:
+
+3. Task 3:
+
+4. Task 4:
+
 
 ## Features
 
