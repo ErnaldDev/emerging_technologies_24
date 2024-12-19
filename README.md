@@ -4,7 +4,7 @@ A brief description of what the project does and the problem it solves.
 
 ## Table of Contents
 1. [Repo Structure](#Repo-Structure)
-2. [trigrams.ipynb](#trigrams-ipynb)
+2. [trigrams.ipynb](#trigrams.ipynb)
 3. [Eliza](#Eliza)
 4. [Deployment](#Deployment)
 5. [References](#References)
