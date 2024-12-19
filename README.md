@@ -5,25 +5,25 @@ A brief description of what the project does and the problem it solves.
 ## Table of Contents
 1. [Repo Structure](#Repo-Structure)
 2. [trigrams.ipynb](#trigrams-ipynb)
-3. [Features](#features)
+3. [Eliza](#Eliza)
 4. [Technologies Used](#technologies-used)
 5. [Contributing](#contributing)
 6. [License](#license)
 
-## Repo Structure
+# Repo Structure
 
-1. trigrams.ipynb
+1. ## trigrams.ipynb
     - Task 1: Third-order letter approximation model
     - Task 2: Third-order letter approximation generation
     - Task 3. Analyze your model
     - Task 4: Export your model as JSON
 
-2. eliza/ : This has the ELIZA chatbot project.
+2. ## eliza/ : This has the ELIZA chatbot project.
     - eliza.js
     - index.html
     - style.css
-
-## trigrams.ipynb
+---
+# trigrams.ipynb
 
 ## Task 1:
 1.   For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
@@ -85,11 +85,26 @@ A brief description of what the project does and the problem it solves.
 ### Output
 - The trigram model is successfully saved in JSON format, allowing for reuse in future tasks or applications.
 
+---
+# Eliza
+---
+## Overview
+- The ELIZA chatbot is a simple conversational agent that emulates human like interactions by responding to user inputs
+based on predefined patterns and responses.This implementation enhances interactivity using a reflection dictionary to,
+adjust pronouns in responses, making conversations feel more natural.
 
 ## Features
+1. Pattern-Based Responses
+- ELIZA uses regular expressions to identify user input patterns and responds with corresponding messages.
+- Supports a variety of conversational themes, such as greetings, feelings, family, and more.
+2. Dynamic Pronoun Reflection
+- Pronouns in user input are dynamically reflected so "I" becomes "you" to make responses contextually relevant.
+3. Interactive Chat Interface
+- A clean, simple web interface where users can type messages and receive responses.
+- Includes support for button clicks and pressing the Enter key to send messages.
+4. Default Fallback Response
+- If no pattern matches the user input, ELIZA provides a generic prompt to encourage further elaboration.
 
-- Feature 1
-- Feature 2
 
 ## Technologies Used
 
