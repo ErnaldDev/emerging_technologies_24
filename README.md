@@ -25,8 +25,8 @@ A brief description of what the project does and the problem it solves.
 
 ## trigrams.ipynb
 
-1. ## Task 1:
--   For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
+## Task 1:
+1.   For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
     The process involved text cleaning and creating a model that captures three-character sequences (trigrams) and their frequencies.
 
        ### Function: **txtcleaner(text)**
@@ -42,12 +42,12 @@ A brief description of what the project does and the problem it solves.
     - A dictionary where each trigram and its frequency are recorded.
     - A trigram model that captures the frequency of all three-character sequences in the combined text from the five books.     
 
-2. ## Task 2:
--   In this task, the trigram model created in Task 1 is used to generate a sequence of 10,000 characters. The process starts with an,
+## Task 2:
+2.   In this task, the trigram model created in Task 1 is used to generate a sequence of 10,000 characters. The process starts with an,
     initial two-character string ("TH"), and each subsequent character is predicted based on the preceding two characters, using weighted,
     probabilities derived from the trigram model.
 
-        ### Function: **nextcharecter(trigrammodel, currenttrigram)**
+       ### Function: **nextcharecter(trigrammodel, currenttrigram)**
     - This function determines the next character to be added to the text based on the current two-character sequence (bigram).
     - It identifies all trigrams that match the current bigram and selects the next character using weighted probabilities.
     - If no matching trigram is found, it returns None and halts the generation process.
@@ -62,8 +62,8 @@ A brief description of what the project does and the problem it solves.
     - A sequence of characters mimicking the patterns in the original input texts.
      
 
-3. ## Task 3:
--   This task evaluates the quality of the generated text by calculating the percentage of valid English words it contains.
+## Task 3:
+3.   This task evaluates the quality of the generated text by calculating the percentage of valid English words it contains.
     A list of valid words is loaded from words.txt, and the generated text is split into individual words for comparison.
 
        ### Function: **text_precentage(text, valid_words)**
@@ -72,7 +72,18 @@ A brief description of what the project does and the problem it solves.
 
         **Output**
     - A percentage value indicating how many of the generated words are valid English words.
-4. Task 4:
+
+## Task 4:
+4.   In this task, the trigram model created in Task 1 is exported to a JSON file for easy storage and future use.
+
+       ### Function: **trigram_dict = dict(trigrammodel)**
+    -   Converts the defaultdict containing the trigram model into a regular dictionary.
+
+     ### Function: **json.dump(trigram_dict, json_file)**
+    -   Serializes the trigram dictionary and saves it as a JSON file (trigrams.json)
+
+        **Output**
+    - The trigram model is successfully saved in JSON format, allowing for reuse in future tasks or applications.
 
 
 ## Features
