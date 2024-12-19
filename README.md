@@ -4,14 +4,14 @@ A brief description of what the project does and the problem it solves.
 
 ## Table of Contents
 1. [Repo Structure](#Repo-Structure)
-2. [trigrams.ipynb](#trigrams.ipynb)
+2. [trigrams.ipynb](#trigramsipynb)
 3. [Eliza](#Eliza)
 4. [Deployment](#Deployment)
 5. [References](#References)
 
 # Repo Structure
 
-1. ## trigrams.ipynb
+1. ## trigrams.ipynb : This is the trigram that was made
     - Task 1: Third-order letter approximation model
     - Task 2: Third-order letter approximation generation
     - Task 3. Analyze your model
@@ -23,6 +23,7 @@ A brief description of what the project does and the problem it solves.
     - style.css
 ---
 # trigrams.ipynb
+---
 
 ## Task 1:
 1.   For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
