@@ -29,15 +29,17 @@ A brief description of what the project does and the problem it solves.
 1.   For this task, I worked with five books from Project Gutenberg to build a third-order letter approximation model using trigrams.
     The process involved text cleaning and creating a model that captures three-character sequences (trigrams) and their frequencies.
 
-       ### Function: **txtcleaner(text)**
+       ### Function:
+       **txtcleaner(text)**
     -   this function removes all characters except uppercase letters, spaces, and full stops,
         and then converting the entire text to uppercase.
 
-       ### Function: **new_trigrammodel(text)**
+       ### Function:
+       **new_trigrammodel(text)**
     -   this function extracts every three-character sequence from the cleaned text,
         then counts the number of times each trigram appears.
 
-        **Output**
+        ### Output
     - A cleaned and processed string that can be used to build the trigram model.
     - A dictionary where each trigram and its frequency are recorded.
     - A trigram model that captures the frequency of all three-character sequences in the combined text from the five books.     
