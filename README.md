@@ -6,7 +6,7 @@ A brief description of what the project does and the problem it solves.
 1. [Repo Structure](#Repo-Structure)
 2. [trigrams.ipynb](#trigrams-ipynb)
 3. [Eliza](#Eliza)
-4. [Technologies Used](#technologies-used)
+4. [Deployment](#Deployment)
 5. [Contributing](#contributing)
 6. [License](#license)
 
@@ -95,23 +95,25 @@ adjust pronouns in responses, making conversations feel more natural.
 
 ## Features
 1. Pattern-Based Responses
-- ELIZA uses regular expressions to identify user input patterns and responds with corresponding messages.
-- Supports a variety of conversational themes, such as greetings, feelings, family, and more.
+    - ELIZA uses regular expressions to identify user input patterns and responds with corresponding messages.
+    - Supports a variety of conversational themes, such as greetings, feelings, family, and more.
 2. Dynamic Pronoun Reflection
-- Pronouns in user input are dynamically reflected so "I" becomes "you" to make responses contextually relevant.
+    - Pronouns in user input are dynamically reflected so "I" becomes "you" to make responses contextually relevant.
 3. Interactive Chat Interface
-- A clean, simple web interface where users can type messages and receive responses.
-- Includes support for button clicks and pressing the Enter key to send messages.
+    - A clean, simple web interface where users can type messages and receive responses.
+    - Includes support for button clicks and pressing the Enter key to send messages.
 4. Default Fallback Response
-- If no pattern matches the user input, ELIZA provides a generic prompt to encourage further elaboration.
+    - If no pattern matches the user input, ELIZA provides a generic prompt to encourage further elaboration.
+
+## Files
+1. index.html
+    - This file provides the structure of the chatbot interface.
+2. eliza.js
+    - The core functionality of the ELIZA chatbot.
+3. style.css
+    - Defines the appearance of the chatbot interface.
 
 
-## Technologies Used
 
-- Python
-- Flask
-- MySQL
 
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+# Deployment
