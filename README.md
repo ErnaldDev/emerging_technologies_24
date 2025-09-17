@@ -116,7 +116,7 @@ adjust pronouns in responses, making conversations feel more natural.
 ---
 # Deployment
 ---
-The chatbot is deployed and you can access via the following link:[Eliza Chatbot](https://AnthonySultanov.github.io/emerging_technologies_24/eliza/)
+The chatbot is deployed and you can access via the following link:[Eliza Chatbot](https://ernalddev.github.io/emerging_technologies_24/eliza)
 
 ---
 # References
